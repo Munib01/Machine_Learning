@@ -1,4 +1,4 @@
-function g = sigmoid(z)
+function g = tan_func(z)
 g = tanh(z);
 
 end
