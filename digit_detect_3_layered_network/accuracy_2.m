@@ -3,30 +3,22 @@ function performance = accuracy_2(W_3, W_2, W_1, b_3, b_2, b_1, X_train, Y_train
 summy = 0;
 
 Z_1 = Product(X_train, W_1, b_1);
-
 A_1 = sigmoid(Z_1);
 
 Z_2 = Product(A_1, W_2, b_2);
-
 A_2 = sigmoid(Z_2);
 
 Z_3 = Product(A_2, W_3, b_3);
-
 A_3 = sigmoid(Z_3);
 
 
 [a,b] = max(A_3,[],2);
 
 for i =1:1:size(X_train,1)
-
   if(b(i) == Y_train_1(i))
-
   summy = summy+1;
-
 end
-
 end
-
 
 
 performance = (summy*100)/size(X_train,1);
