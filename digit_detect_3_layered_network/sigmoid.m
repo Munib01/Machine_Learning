@@ -1,3 +1,5 @@
 function g = sigmoid(z)
-g = 1.0 ./ (1.0 + exp(-z));
+
+g = 1.00 ./ (1.00 + exp(-z));
+
 end
