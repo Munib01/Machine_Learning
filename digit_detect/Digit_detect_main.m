@@ -21,6 +21,7 @@ cost = cost + cost_trace(i,1);
 
 %%%%% Backward Propagation %%%%%
 [W_2, b_2, W_1, b_1] = Backward_Propagation(X_train, Y_train, A_2, A_1, examples, W_1, b_1, W_2, b_2, learning_rate, lambda);
+
 %{
 d_W_2 = ((A_2-Y_train).*(sigmoidGradient(A_2)))'*(A_1)/examples;
 d_b_2 = sum((A_2-Y_train).*(sigmoidGradient(A_2)))'/examples;
