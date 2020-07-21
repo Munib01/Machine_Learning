@@ -24,8 +24,6 @@ examples = 4000;        units_layer_1 = 400;          units_layer_2 = 20;       
 
 iteration = 3000;        cost = 0;       cost_trace = zeros(iteration,1);       learning_rate = 1;      lambda = 0;
 
-
-
 for i=1:1:iteration
 
 %%%%% Forward Propagation %%%%%
